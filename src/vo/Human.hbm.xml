@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+       "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >  
+<hibernate-mapping>
+<class name="vo.Human" table="human">
+		<id name="hid">
+			<column name="hid" />
+			<generator class="increment" />
+		</id>
+		<property name="hname" type="java.lang.String">
+			<column name="hname"  />
+		</property>
+	</class>
+</hibernate-mapping>
